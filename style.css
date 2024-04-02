@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+:root {
+    --fauxblack: #17171A;
+    --magenta: #635D84;
+    --aqua: #5D7984;
+    --darkpurple: #654762;
+    --nightblue: #43465C;
+    --selectedColor: #635D84;
+    --prevColor: #635D84;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Michroma', sans-serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    /* background: linear-gradient(180deg, var(--fauxblack) 0%, var(--magenta) 100%); */
+    box-shadow: inset 0px 25px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.199);
+}
+
+.glowing-bg {
+    animation: glowing-bg 1.1s ease-out infinite alternate both;
+}
+
+@keyframes glowing-bg {
+    0% {
+        background: linear-gradient(177deg, var(--fauxblack) 0%, var(--selectedColor) 99%);
+    }
+    5% {
+        background: linear-gradient(177deg, var(--fauxblack) 0%, var(--selectedColor) 98%);
+    }
+    10% {
+        background: linear-gradient(177deg, var(--fauxblack) 0%, var(--selectedColor) 97%);
+    }
+    15% {
+        background: linear-gradient(178deg, var(--fauxblack) 0%, var(--selectedColor) 96%);
+    }
+    20% {
+        background: linear-gradient(178deg, var(--fauxblack) 0%, var(--selectedColor) 95%);
+    }
+    25% {
+        background: linear-gradient(178deg, var(--fauxblack) 0%, var(--selectedColor) 94%);
+    }
+    30% {
+        background: linear-gradient(179deg, var(--fauxblack) 0%, var(--selectedColor) 93%);
+    }
+    35% {
+        background: linear-gradient(179deg, var(--fauxblack) 0%, var(--selectedColor) 92%);
+    }
+    40% {
+        background: linear-gradient(179deg, var(--fauxblack) 0%, var(--selectedColor) 91%);
+    }
+    45% {
+        background: linear-gradient(179deg, var(--fauxblack) 0%, var(--selectedColor) 90%);
+    }
+    50% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--selectedColor) 89%);
+    }
+    55% {
+        background: linear-gradient(181deg, var(--fauxblack) 0%, var(--selectedColor) 88%);
+    }
+    60% {
+        background: linear-gradient(181deg, var(--fauxblack) 0%, var(--selectedColor) 87%);
+    }
+    65% {
+        background: linear-gradient(181deg, var(--fauxblack) 0%, var(--selectedColor) 86%);
+    }
+    70% {
+        background: linear-gradient(182deg, var(--fauxblack) 0%, var(--selectedColor) 85%);
+    }
+    75% {
+        background: linear-gradient(182deg, var(--fauxblack) 0%, var(--selectedColor) 84%);
+    }
+    80% {
+        background: linear-gradient(182deg, var(--fauxblack) 0%, var(--selectedColor) 83%);
+    }
+    85% {
+        background: linear-gradient(183deg, var(--fauxblack) 0%, var(--selectedColor) 82%);
+    }
+    90% {
+        background: linear-gradient(183deg, var(--fauxblack) 0%, var(--selectedColor) 81%);
+    }
+    95% {
+        background: linear-gradient(183deg, var(--fauxblack) 0%, var(--selectedColor) 80%);
+    }
+    100% {
+        background: linear-gradient(184deg, var(--fauxblack) 0%, var(--selectedColor) 79%);
+    }
+}
+
+.aqua-infinite {
+    animation: aqua-infinite 0.5s ease-out infinite alternate both;
+}
+
+@keyframes aqua-infinite {
+    0% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 99%);
+    }
+    5% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 98%);
+    }
+    10% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 97%);
+    }
+    15% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 96%);
+    }
+    20% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 95%);
+    }
+    25% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 94%);
+    }
+    30% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 93%);
+    }
+    35% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 92%);
+    }
+    40% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 91%);
+    }
+    45% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 90%);
+    }
+    50% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 89%);
+    }
+    55% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 88%);
+    }
+    60% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 87%);
+    }
+    65% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 86%);
+    }
+    70% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 85%);
+    }
+    75% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 84%);
+    }
+    80% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 83%);
+    }
+    85% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 82%);
+    }
+    90% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 81%);
+    }
+    95% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 80%);
+    }
+    100% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--aqua) 79%);
+    }
+}
+
+.nightblue-infinite {
+    animation: nightblue-infinite 0.8s ease-out infinite alternate both;
+}
+
+@keyframes nightblue-infinite {
+    0% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 99%);
+    }
+    5% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 98%);
+    }
+    10% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 97%);
+    }
+    15% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 96%);
+    }
+    20% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 95%);
+    }
+    25% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 94%);
+    }
+    30% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 93%);
+    }
+    35% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 92%);
+    }
+    40% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 91%);
+    }
+    45% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 90%);
+    }
+    50% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 89%);
+    }
+    55% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 88%);
+    }
+    60% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 87%);
+    }
+    65% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 86%);
+    }
+    70% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 85%);
+    }
+    75% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 84%);
+    }
+    80% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 83%);
+    }
+    85% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 82%);
+    }
+    90% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 81%);
+    }
+    95% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 80%);
+    }
+    100% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--nightblue) 79%);
+    }
+}
+
+.darkpurple-infinite {
+    animation: darkpurple-infinite 0.8s ease-out infinite alternate both;
+}
+
+@keyframes darkpurple-infinite {
+    0% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 99%);
+    }
+    5% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 98%);
+    }
+    10% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 97%);
+    }
+    15% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 96%);
+    }
+    20% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 95%);
+    }
+    25% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 94%);
+    }
+    30% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 93%);
+    }
+    35% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 92%);
+    }
+    40% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 91%);
+    }
+    45% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 90%);
+    }
+    50% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 89%);
+    }
+    55% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 88%);
+    }
+    60% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 87%);
+    }
+    65% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 86%);
+    }
+    70% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 85%);
+    }
+    75% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 84%);
+    }
+    80% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 83%);
+    }
+    85% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 82%);
+    }
+    90% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 81%);
+    }
+    95% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 80%);
+    }
+    100% {
+        background: linear-gradient(180deg, var(--fauxblack) 0%, var(--darkpurple) 79%);
+    }
+}
+
+.fade-out {
+	animation: fade-out 1s ease-out both;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in-fwd {
+	animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in-fwd {
+    0% {
+      transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+
+.glow-infinite {
+	filter: drop-shadow(0px 0px 30px rgba(255, 255, 255, 0.75));
+}
+.btn-portfolio {
+    width: 15%;
+    height: 45px;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aqua {
+    background: linear-gradient(0deg, var(--aqua) 0%, #17171A 95.33%);
+}
+.magenta {
+    background: linear-gradient(0deg, var(--magenta) 0%, #17171A 95.33%);
+}
+.darkpurple {
+    background: linear-gradient(0deg, var(--darkpurple) 0%, #17171A 95.33%);
+}
+.nightblue {
+    background: linear-gradient(0deg, var(--nightblue) 0%, #17171A 95.33%);
+}
+
+.bg-transparent-portfolio {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+#Project:hover {
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 567px) {
+    footer {
+        display: none !important;
+    }
+    #navMobile {
+        display: flex;
+    }
+    #navDesktop {
+        display: none;
+    }
+}

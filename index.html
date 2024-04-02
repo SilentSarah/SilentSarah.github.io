@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Hicham's Portfolio</title>
+</head>
+<body class="glowing-bg">
+    <!-- Navbar -->
+    <div class="navbar shadow-inner">
+        <a href="/" id="logo_btn" class="btn btn-ghost text-3xl">SHM</a>
+        <div class="flex flex-row justify-between ms-auto opacity-75">
+            <a target="_blank" href="https://www.instagram.com/shmeftah/" class="btn w-10 btn-ghost me-2">
+                <div class="avatar">
+                    <div class="w-10 rounded">
+                        <img src="/img/socials/instagram.png"/>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/hicham-meftah-8137581b5/" class="btn w-10 btn-ghost me-2">
+                <div class="avatar">
+                    <div class="w-10 rounded">
+                        <img src="/img/socials/linkedin.png"/>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="https://github.com/SilentSarah" class="btn w-10 btn-ghost me-2">
+                <div class="avatar">
+                    <div class="w-10 rounded">
+                        <img src="/img/socials/github.png"/>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="mainSection" class="flex w-full h-full my-auto justify-center">
+        
+    </div>
+
+    <div id="navDesktop" class="flex items-center justify-center px-5 gap-3 w-full">
+        <a href="/about" id="AboutD" class="btn-portfolio shadow-xl aqua text-white text-sm border border-slate-400">
+            <button class="w-full h-full">About Me</button>
+        </a>
+        <a href="/projects" id="ProjectsD" class="btn-portfolio shadow-xl darkpurple text-white text-sm border border-slate-400">
+            <button class="w-full h-full">Projects</button>
+        </a>
+        <a href="/experience" id="ExperienceD" class="btn-portfolio shadow-xl nightblue text-white text-sm border border-slate-400">
+            <button class="w-full h-full">Experience</button>
+        </a>
+    </div>
+    <div id="navMobile" class="hidden items-center justify-center w-full"> 
+        <a href="/about" id="AboutM" selected="False" class="aqua mobile-btn flex items-center justify-center w-full"> 
+            <img class="drop-shadow-xl opacity-85" src="/img/Account.png" width="30px">
+        </a>
+        <a href="/projects" id="ProjectsM" selected="False" class="darkpurple mobile-btn flex items-center justify-center w-full"> 
+            <img class="drop-shadow-xl opacity-85" src="/img/Projects.png" width="30px">
+        </a>
+        <a href="/experience" id="ExperienceM" selected="False" class="nightblue mobile-btn flex items-center justify-center w-full"> 
+            <img class="drop-shadow-xl opacity-85" src="/img/ExperienceWhite.png" width="30px">
+        </a>
+    </div>
+
+    <footer class="footer items-center justify-center p-4 text-neutral-content">
+        <div class="tooltip" data-tip="Sarah says hiiiiiiii <3">
+            <p class="text-center">2024-2025</p>
+        </div>
+    </footer>
+    <script src="/js/events.js"></script>
+    <script src="/js/router.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.124.0/build/three.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
