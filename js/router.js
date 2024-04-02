@@ -59,9 +59,11 @@ window.addEventListener('popstate', router);
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault();
-            history.pushState(null, null, this.href);
-            router();
+            if (!e.href.includes('instagram', 'linkedin', 'github')) {
+                e.preventDefault();
+                history.pushState(null, null, this.href);
+                router();
+            }
         });
     });
 
