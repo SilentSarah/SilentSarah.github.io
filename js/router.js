@@ -59,7 +59,8 @@ window.addEventListener('popstate', router);
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', function (e) {
-            if (e.href != 'instagram' && e.href != 'linkedin' && e.href != 'github') {
+            if (this.href.startsWith(window.location.origin)) {
+                console.log(window.location.origin);
                 e.preventDefault();
                 history.pushState(null, null, this.href);
                 router();
