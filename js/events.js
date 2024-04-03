@@ -30,7 +30,7 @@ function displayProject(project) {
 function fetchProjects() {
     let projectContainer = document.getElementById('Projects');
     LoadingAnimation.then(response => projectContainer.innerHTML = response);
-    fetch('http://129.151.224.158:8000/api/v1/projects' ,{
+    fetch('http://api.meftah.me:8000/api/v1/projects' ,{
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
